@@ -20,16 +20,35 @@ Quick start
 ```yaml
 vtskit:
   keycloak:
-    example: value
+    realm: example
+    auth-server-url: http://example:8080
+    resource: example
+    client-key-password: secret
 ```
 
 Usage
 -------
 ##### Feature
+Login
 ```java
-System.out.println("Example Code");
+public AccessTokenResponse authenticate(UserDTO userDTO )
 ```
-
+Logout
+```java
+public void logout(String refreshToken )
+```
+Get information of user
+```java
+public String getUserInfo( String token )
+```
+Refresh token
+```java
+public AccessTokenResponse refreshToken(String refreshToken )
+```
+Register User
+```java
+public AccessTokenResponse refreshToken(String refreshToken )
+```
 Build
 -------
 * Build with Unittest

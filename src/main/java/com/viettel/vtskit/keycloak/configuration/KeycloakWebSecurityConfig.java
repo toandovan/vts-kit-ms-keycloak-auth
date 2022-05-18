@@ -33,7 +33,6 @@ public class KeycloakWebSecurityConfig extends KeycloakWebSecurityConfigurerAdap
      */
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-
         KeycloakAuthenticationProvider keycloakAuthenticationProvider
                 = keycloakAuthenticationProvider();
         SimpleAuthorityMapper simpleAuthorityMapper=new SimpleAuthorityMapper();
