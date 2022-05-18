@@ -4,7 +4,6 @@ import org.keycloak.adapters.springboot.KeycloakSpringBootProperties;
 
 import javax.annotation.PostConstruct;
 
-
 public class KeycloakProperties extends KeycloakSpringBootProperties {
 
     /**
