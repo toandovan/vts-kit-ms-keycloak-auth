@@ -52,6 +52,15 @@ Delete User
 ```java
 public int deleteUser(String accessToken)
 ```
+Update User
+```java
+public void updateUser(String accessToken, UserDTO userDTO)
+```
+Change Password User
+```java
+public void changePassword(String accessToken, String password)
+```
+
 Build
 -------
 * Build with Unittest
